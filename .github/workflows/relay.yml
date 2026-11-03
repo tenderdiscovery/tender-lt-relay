@@ -1,0 +1,64 @@
+name: Lithuania (viesiejipirkimai.lt) relay
+
+# Runs fetch_viesiejipirkimai_lt.py on GitHub's own infrastructure (unaffected
+# by the Strato->viesiejipirkimai.lt network block confirmed 2026-11-04 via
+# `curl -4 -v --max-time 15 https://viesiejipirkimai.lt/` run directly on the
+# production server, which timed out after 15s at pure TCP-connect against
+# 195.182.78.144 - no DNS issue, no IPv6 race, IPv6 resolved to "none" for
+# this host) and commits the result as latest_lt.json. run_daily_digest.py
+# on the production server reads that file back via a plain HTTPS GET to
+# raw.githubusercontent.com - same pattern already used for
+# oeffentlichevergabe.de (tenderdiscovery/tender-oev-relay) and
+# publicprocurement.be (tenderdiscovery/tender-be-relay).
+#
+# NOTE on dedup freshness: ted_shaped_final_snapshot.json committed alongside
+# this workflow is a ONE-TIME snapshot of the (sandbox copy of the) master
+# dataset, taken 2026-11-04. It will go stale over time and this workflow
+# does NOT refresh it automatically - that's fine and intentional (same
+# accepted limitation as the oev/be relays, see run_daily_digest.py's own
+# comment on GITHUB_OEV_RELAY_URL): the real, current, authoritative dedup
+# against the live master happens centrally in run_daily_digest.py's own
+# existing_ids/looks_like_duplicate_of_master() check AFTER reading this
+# relay's output - so a stale snapshot here only means a few already-known
+# records get needlessly re-reported to this workflow's own output file, not
+# that anything wrong reaches the real master dataset or the user.
+
+on:
+  schedule:
+    # 05:10 UTC daily - ten minutes after the Belgium relay, to avoid both
+    # workflows hammering GitHub's shared runners at the exact same minute
+    # (no functional requirement, just tidiness). Runs in UTC only (GitHub
+    # Actions has no local-time cron) - adjust manually across DST changes if
+    # exact ordering ever matters (it currently doesn't - the relay just
+    # needs to have run AT SOME POINT before being read, not on an exact
+    # schedule).
+    - cron: "10 5 * * *"
+  workflow_dispatch: {}  # manual "Run workflow" button for on-demand testing
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run fetch_viesiejipirkimai_lt.py
+        run: |
+          python3 fetch_viesiejipirkimai_lt.py \
+            --days 90 \
+            --out latest_lt.json \
+            --dataset ted_shaped_final_snapshot.json
+
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add latest_lt.json
+          git diff --quiet --cached || git commit -m "Update latest_lt.json ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          git push
