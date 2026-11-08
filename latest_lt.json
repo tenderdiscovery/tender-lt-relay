@@ -319,5 +319,37 @@
     "source": "viesiejipirkimai.lt",
     "correctionKey": "10215021",
     "isCorrectionHint": false
+  },
+  {
+    "publicationNumber": "LT-10362688",
+    "title": "Centralizuotai valdomos kibernetinio saugumo programinės įrangos licencijos",
+    "buyerName": "Visagino savivaldybės administracija",
+    "country": "LTU",
+    "publicationDate": "2026-11-06",
+    "deadline": "2026-11-13",
+    "noticeType": "lt-cft",
+    "procedureType": "Skelbiama apklausa",
+    "cpvCodes": [
+      "48218000"
+    ],
+    "estimatedValue": null,
+    "currency": null,
+    "description": "Perkančioji organizacija numato įsigyti 160 vnt. centralizuotai valdomų kibernetinio saugumo programinės įrangos licencijų. Licencijų galiojimo pradžia nuo 2026-12-03. Prekės įsigijamos 36 mėn. laikotarpiui.",
+    "originalUrl": "https://viesiejipirkimai.lt/epps/cft/prepareViewCfTWS.do?resourceId=10362688",
+    "lotName": null,
+    "awardedTo": null,
+    "documentsUrl": "https://viesiejipirkimai.lt/epps/cft/downloadNoticeForAdvSearch.do?resourceId=10362688",
+    "contractDurationMonths": 36,
+    "buyerEmail": "visaginas@visaginas.lt",
+    "buyerLegalType": null,
+    "buyerActivity": "e. Vietos valdžia",
+    "contractFolderId": "1002/2348/5003314",
+    "internalId": "10362688",
+    "procedureCode": "Skelbiama apklausa",
+    "accelerated": null,
+    "performanceLocation": null,
+    "source": "viesiejipirkimai.lt",
+    "correctionKey": "10362688",
+    "isCorrectionHint": false
   }
 ]
