@@ -32,38 +32,6 @@
     "isCorrectionHint": false
   },
   {
-    "publicationNumber": "LT-9422184",
-    "title": "Privilegijuotų sąskaitų valdymo (PAM) programinės įrangos nuoma",
-    "buyerName": "Nacionalinis kibernetinio saugumo centras prie Krašto apsaugos ministerijos",
-    "country": "LTU",
-    "publicationDate": "2026-08-28",
-    "deadline": "2026-09-07",
-    "noticeType": "lt-cft",
-    "procedureType": "Skelbiama apklausa",
-    "cpvCodes": [
-      "48422000"
-    ],
-    "estimatedValue": 24793.39,
-    "currency": "EUR",
-    "description": "Kibernetinio saugumo programinės įrangos nuoma reikalinga NKSC padalinių funkcijų vykdymui",
-    "originalUrl": "https://viesiejipirkimai.lt/epps/cft/prepareViewCfTWS.do?resourceId=9422184",
-    "lotName": null,
-    "awardedTo": null,
-    "documentsUrl": "https://viesiejipirkimai.lt/epps/cft/downloadNoticeForAdvSearch.do?resourceId=9422184",
-    "contractDurationMonths": 12,
-    "buyerEmail": "arminas.rupeika@nksc.lt",
-    "buyerLegalType": null,
-    "buyerActivity": "c. Gynyba",
-    "contractFolderId": "1002/2688/3941503",
-    "internalId": "9422184",
-    "procedureCode": "Skelbiama apklausa",
-    "accelerated": null,
-    "performanceLocation": null,
-    "source": "viesiejipirkimai.lt",
-    "correctionKey": "9422184",
-    "isCorrectionHint": false
-  },
-  {
     "publicationNumber": "LT-9545069",
     "title": "IT saugumo ir projektų valdymo kompetencijų paslaugos",
     "buyerName": "Lietuvos bankas",
