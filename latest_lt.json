@@ -319,5 +319,37 @@
     "source": "viesiejipirkimai.lt",
     "correctionKey": "10362688",
     "isCorrectionHint": false
+  },
+  {
+    "publicationNumber": "LT-10477581",
+    "title": "2023– 2030 m. Nacionalinės kibernetinio saugumo plėtros programos pažangos priemonę įgyvendinančių veiklų poveikio vertinimo paslaugos",
+    "buyerName": "Lietuvos Respublikos krašto apsaugos ministerija",
+    "country": "LTU",
+    "publicationDate": "2026-11-16",
+    "deadline": "2026-11-29",
+    "noticeType": "lt-cft",
+    "procedureType": "Atviras konkursas",
+    "cpvCodes": [
+      "79419000"
+    ],
+    "estimatedValue": null,
+    "currency": null,
+    "description": "Supaprastintas atviras",
+    "originalUrl": "https://viesiejipirkimai.lt/epps/cft/prepareViewCfTWS.do?resourceId=10477581",
+    "lotName": null,
+    "awardedTo": null,
+    "documentsUrl": "https://viesiejipirkimai.lt/epps/cft/downloadNoticeForAdvSearch.do?resourceId=10477581",
+    "contractDurationMonths": 11,
+    "buyerEmail": "algirdas.dunderis@kam.lt",
+    "buyerLegalType": null,
+    "buyerActivity": "c. Gynyba",
+    "contractFolderId": "1002/2911/4670567",
+    "internalId": "10477581",
+    "procedureCode": "Atviras konkursas",
+    "accelerated": null,
+    "performanceLocation": null,
+    "source": "viesiejipirkimai.lt",
+    "correctionKey": "10477581",
+    "isCorrectionHint": false
   }
 ]
