@@ -351,5 +351,37 @@
     "source": "viesiejipirkimai.lt",
     "correctionKey": "10477581",
     "isCorrectionHint": false
+  },
+  {
+    "publicationNumber": "LT-10483719",
+    "title": "Viešinimo paslaugos",
+    "buyerName": "Nacionalinis kibernetinio saugumo centras prie Krašto apsaugos ministerijos",
+    "country": "LTU",
+    "publicationDate": "2026-11-18",
+    "deadline": "2026-11-24",
+    "noticeType": "lt-cft",
+    "procedureType": "Skelbiama apklausa",
+    "cpvCodes": [
+      "79416000"
+    ],
+    "estimatedValue": 10743.8,
+    "currency": "EUR",
+    "description": "Grafinio dizaino ir maketavimo paslaugos skirtos kokybiškai vizualinei komunikacijai įvairiuose tiek vidiniuose, tiek išoriniuose Užsakovo naudojamuose komunikacijos kanaluose: socialiniai tinklai, lauko reklama, internetinė svetainė, intranetas ir kt. Pirkimo tikslas ir paskirtis – užtikrinti kokybišką vizualinę komunikaciją su Nacionalinio kibernetinio saugumo centro klientais (subjektais), plačiąja visuomene, darbuotojais, esamais ir potencialiais partneriais",
+    "originalUrl": "https://viesiejipirkimai.lt/epps/cft/prepareViewCfTWS.do?resourceId=10483719",
+    "lotName": null,
+    "awardedTo": null,
+    "documentsUrl": "https://viesiejipirkimai.lt/epps/cft/downloadNoticeForAdvSearch.do?resourceId=10483719",
+    "contractDurationMonths": 3,
+    "buyerEmail": "arminas.rupeika@nksc.lt",
+    "buyerLegalType": null,
+    "buyerActivity": "c. Gynyba",
+    "contractFolderId": "1002/2688/3941507",
+    "internalId": "10483719",
+    "procedureCode": "Skelbiama apklausa",
+    "accelerated": null,
+    "performanceLocation": null,
+    "source": "viesiejipirkimai.lt",
+    "correctionKey": "10483719",
+    "isCorrectionHint": false
   }
 ]
